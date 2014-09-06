@@ -34,7 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8BC5627619BAB27B008947D3 /* classMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = classMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BC5627619BAB27B008947D3 /* Wiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BC5627919BAB27C008947D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8BC5627B19BAB27C008947D3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8BC5627D19BAB27C008947D3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -92,7 +92,7 @@
 		8BC5627719BAB27B008947D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8BC5627619BAB27B008947D3 /* classMate.app */,
+				8BC5627619BAB27B008947D3 /* Wiz.app */,
 				8BC5629719BAB27C008947D3 /* classMateTests.xctest */,
 			);
 			name = Products;
@@ -169,7 +169,7 @@
 			);
 			name = classMate;
 			productName = classMate;
-			productReference = 8BC5627619BAB27B008947D3 /* classMate.app */;
+			productReference = 8BC5627619BAB27B008947D3 /* Wiz.app */;
 			productType = "com.apple.product-type.application";
 		};
 		8BC5629619BAB27C008947D3 /* classMateTests */ = {
@@ -379,7 +379,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "classMate/classMate-Prefix.pch";
 				INFOPLIST_FILE = "classMate/classMate-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Wiz;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -392,7 +392,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "classMate/classMate-Prefix.pch";
 				INFOPLIST_FILE = "classMate/classMate-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Wiz;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
