@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MLPAutoCompleteTextFieldDataSource.h>
 
-@interface WIZStudentQueryViewController : UIViewController
+@interface WIZStudentQueryViewController : UIViewController <MLPAutoCompleteTextFieldDataSource,UITextFieldDelegate>
 
 @end
