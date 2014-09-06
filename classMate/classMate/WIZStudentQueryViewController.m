@@ -39,16 +39,7 @@
     _fds.delegate = self;
     _fds.clearButtonMode = UITextFieldViewModeWhileEditing;
     
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
-                                   initWithTarget:self
-                                   action:@selector(dismissKeyboard)];
-    
-//    [self.view addGestureRecognizer:tap];
    
-    
-    
-
-    
     
     [self.view addSubview:_fds];
     _fds.backgroundColor = [UIColor whiteColor];
@@ -109,61 +100,6 @@
                      animations:^{
                          [self.view setAlpha:1.0];
                      }completion:nil];
-}
-
-- (void)keyboardDidShowWithNotification:(NSNotification *)aNotification
-{
-    [UIView animateWithDuration:0.3
-                          delay:0
-                        options:UIViewAnimationCurveEaseOut|UIViewAnimationOptionBeginFromCurrentState
-                     animations:^{
-                         CGPoint adjust;
-                         switch (self.interfaceOrientation) {
-                             case UIInterfaceOrientationLandscapeLeft:
-                                 adjust = CGPointMake(-110, 0);
-                                 break;
-                             case UIInterfaceOrientationLandscapeRight:
-                                 adjust = CGPointMake(110, 0);
-                                 break;
-                             default:
-                                 adjust = CGPointMake(0, -60);
-                                 break;
-                         }
-                         CGPoint newCenter = CGPointMake(self.view.center.x+adjust.x, self.view.center.y+adjust.y);
-                         [self.view setCenter:newCenter];
-                       
-                         
-                     }
-                     completion:nil];
-}
-
-
-- (void)keyboardDidHideWithNotification:(NSNotification *)aNotification
-{
-    [UIView animateWithDuration:0.3
-                          delay:0
-                        options:UIViewAnimationCurveEaseOut|UIViewAnimationOptionBeginFromCurrentState
-                     animations:^{
-                         CGPoint adjust;
-                         switch (self.interfaceOrientation) {
-                             case UIInterfaceOrientationLandscapeLeft:
-                                 adjust = CGPointMake(110, 0);
-                                 break;
-                             case UIInterfaceOrientationLandscapeRight:
-                                 adjust = CGPointMake(-110, 0);
-                                 break;
-                             default:
-                                 adjust = CGPointMake(0, 60);
-                                 break;
-                         }
-                         CGPoint newCenter = CGPointMake(self.view.center.x+adjust.x, self.view.center.y+adjust.y);
-                         [self.view setCenter:newCenter];
-                         
-                     }
-                     completion:nil];
-    
-    
-  
 }
 
 
