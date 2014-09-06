@@ -67,6 +67,7 @@
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:1.0f animations:^{
             button.transform = CGAffineTransformScale(CGAffineTransformIdentity, 3, 3);
+            button.alpha=0;
         } completion:^(BOOL finished) {
             self.clicked = YES;
         }];
@@ -87,6 +88,7 @@
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:1.0f animations:^{
             button.transform = CGAffineTransformScale(CGAffineTransformIdentity, 3, 3);
+            button.alpha=0;
         } completion:^(BOOL finished) {
             self.clicked = YES;
         }];
